@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fetchTodos()">Fetch Todos</button>
+    <button id="length" onclick="logTodos()">Log Todos</button>
+    <button onclick="populateTodos()">Populate Todos</button>
+
+    <div class="length-array">
+        <p>The number of items is: <span id="myText"></span></p>
+          
+          <label for number_input>Enter a number between 1 and 10:</label><br>
+          <input type="text" id="myNumber" name="myNumber"><br><br>
+
+          <button onclick="selectedTodos()" type="button" class="btn btn-primary btn-lg">Submit</button><br><br>
+
+          <button onclick="resetToDos(this)" type="reset" class="btn btn-primary btn-lg">Clear</button><br><br>
+
+          <button onclick="completedTodos()" type="button">Completed</button> <button onclick="incompletedTodos()" type="button">Incomplete</button>
+
+    </div>
+
+
+    <ol id="todo-list" data-lists>
+      <!-- LIs will go here -->
+    </ol>
+
+
+</body>
+</html>
